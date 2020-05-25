@@ -18,7 +18,6 @@ class Pages extends React.Component {
         this.state = {
             closedSmallerSidebar: false
         };
-
     }
 
     render() {

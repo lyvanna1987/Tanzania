@@ -1,4 +1,4 @@
-import { Route, Redirect} from 'react-router-dom';
+import { Route, Redirect, Switch} from 'react-router-dom';
 import React, {Suspense, lazy, Fragment} from 'react';
 import Loader from 'react-loaders'
 
@@ -26,7 +26,10 @@ const AppMain = () => {
                     </div>
                 </div>
             }>
-                <Route path="/" component={LandingPage}/>
+                <Switch>
+                    <Route path="/" component={LandingPage}/>
+                </Switch>
+                
             </Suspense>
 
             <Route exact path="/" render={() => (

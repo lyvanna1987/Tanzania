@@ -14,10 +14,8 @@ class LandingPage extends Component {
                 <div className="row">
                     <div className="col-12">
                         <ImgMainBar src={imgMainBar}></ImgMainBar>
-                    </div>
-                    
-                </div>
-                
+                    </div>                    
+                </div>                
             </div>
         )
     }
