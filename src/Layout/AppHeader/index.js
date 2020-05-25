@@ -34,7 +34,7 @@ class Header extends React.Component {
                             <div>logo</div>
                         </div>
                         <div className="app-header-right">
-                            <Link className="my-1 mx-3 text-body" to="/home">
+                            <Link className="my-1 mx-3 text-body" to="/">
                                 HOME
                             </Link>
                             <Link className="my-1 mx-3 text-body" to="/howTo">

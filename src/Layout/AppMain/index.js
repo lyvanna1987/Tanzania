@@ -7,7 +7,7 @@ import {
 } from 'react-toastify';
 
 const LandingPage = lazy(() => import('../../Pages/LandingPage'));
-
+const SignUp  = lazy(()=>import('../../Pages/Auth/SignUp'))
 const AppMain = () => {
 
     return (
@@ -27,7 +27,8 @@ const AppMain = () => {
                 </div>
             }>
                 <Switch>
-                    <Route path="/" component={LandingPage}/>
+                    <Route exact path="/" component={LandingPage}/>
+                    <Route path="/signUp" component={SignUp} />
                 </Switch>
                 
             </Suspense>
