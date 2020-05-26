@@ -74,6 +74,7 @@
     "react-dropzone": "^10.1.9",
     "react-flag-icon-css": "^1.0.25",
     "react-flagkit": "^1.0.2",
+    "react-google-recaptcha": "^2.0.1",
     "react-icons": "^3.8.0",
     "react-image-crop": "^8.4.2",
     "react-input-mask": "^2.0.4",

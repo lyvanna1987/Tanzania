@@ -11,14 +11,20 @@ import { Input, CustomInput, FormGroup } from 'reactstrap';
 import DatePicker from 'react-datepicker';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import ReCAPTCHA from "react-google-recaptcha";
 
+const recaptchaRef = React.createRef();
 class SignUp extends React.Component {
+
+    onChange = (value) => {
+        console.log("Captcha value:", value);
+    }
 
     render () {
         return (            
             <Container>                
                 <Widget>
-                  
+                
                     <TitleContainer>
                         <TitleUnselected>Log in</TitleUnselected>                        
                         <div className="col-4 xs-12 justify-content-center d-flex">
@@ -46,7 +52,7 @@ class SignUp extends React.Component {
                         <CustomInput type="radio" name="gender" id="maleRadio" label="Male" className="ml-3"/>
                         <CustomInput type="radio" name="gender" id="femaleRadio" label="Female" className="ml-3"/>
                     </FormGroup>  
-                    <div style={{width: '90%', marginLeft: 20}} className="d-flex">
+                    <div style={{width: '90%', marginLeft: 20, marginBottom: 15}} className="d-flex">
                         <label>Birthday</label>
                         
                         <DatePicker placeholderText="Click to select a date" className="form-control ml-2" />
@@ -57,7 +63,12 @@ class SignUp extends React.Component {
                         </InputGroupAddon>
 
                     </div>
-                    <div style={{width:'60%', height: 100, backgroundColor:'gray', marginTop: 17 }} ></div>  
+                    {/* <div style={{width:'60%', height: 100, backgroundColor:'gray', marginTop: 17 }} ></div>   */}
+                    <ReCAPTCHA
+                        ref={recaptchaRef}
+                        sitekey="6LcyKsMUAAAAAGTD4Of6GCBoo_lab32iIanZcm0k"
+                        onChange={this.onChange}
+                    />
                     <Button className="mb-2 mr-2 btn-icon btn-pill" color="success" style={{width: '90%', marginTop: 11, height: 52}}> Join </Button>  
                     <label style={{marginTop: 25}}>By joining LinkUp Africa, you agree to our <label style={{color: '#0A88D3'}}>Terms of Service.</label></label>           
                   
