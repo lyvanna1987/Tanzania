@@ -18,12 +18,13 @@ class SignUp extends React.Component {
         return (            
             <Container>                
                 <Widget>
+                  
                     <TitleContainer>
-                        <h5 className="col-4 xs-12 text-center" >Log in</h5>
-                        <Title>
-                            <div className="col-4 xs-12 boder-bottom" >Join</div>
-                        </Title>                        
-                        <h5 className="col-4 xs-12 text-center">Subscribe</h5>
+                        <TitleUnselected>Log in</TitleUnselected>                        
+                        <div className="col-4 xs-12 justify-content-center d-flex">
+                            <Title > Join </Title>                                             
+                        </div>
+                        <TitleUnselected> Subscribe </TitleUnselected>
                     </TitleContainer>
                     <div className="mt-3 justify-content-center" style={{borderWidth: 1}}>
                         <Button className="btn-pill btn-shadow " onClick={this.showAdd} style={{backgroundColor:'#3B5998', width: 150}}>
@@ -59,6 +60,7 @@ class SignUp extends React.Component {
                     <div style={{width:'60%', height: 100, backgroundColor:'gray', marginTop: 17 }} ></div>  
                     <Button className="mb-2 mr-2 btn-icon btn-pill" color="success" style={{width: '90%', marginTop: 11, height: 52}}> Join </Button>  
                     <label style={{marginTop: 25}}>By joining LinkUp Africa, you agree to our <label style={{color: '#0A88D3'}}>Terms of Service.</label></label>           
+                  
                 </Widget>
                 
             </Container>           
@@ -80,28 +82,38 @@ const Widget = styled.div`
     max-width: 464px;
     width: 100%;
     height: 100%;
-    max-height: 700px;
+    max-height: 800px;
     background-color: #FFFFFF 
     border-radius: 5px;  
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     align-items: center;
 `
 const TitleContainer = styled.div`
     width: 90%;
-    height: 30px;
+    height: 33px;
     border-bottom: 1px solid grey;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: center;  
+    margin-top: 12px;  
 `
 const Title = styled.div`
-    text-align: center;
+    width: fit-content;
     font-size: 20px;
     font: Regular 20px/26px Roboto;
-    color: #000000;
+    color: #0A88D3;
     font-weight: 600;
+    border-bottom: 2px solid #0A88D3;  
+`
+const TitleUnselected = styled.div`
+    
+    font-size: 20px;
+    font: Regular 20px/26px Roboto;
+    color: black;
+    font-weight: 600;    
 `
 
 
