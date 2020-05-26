@@ -25,7 +25,7 @@ class SignIn extends React.Component {
                         <TitleUnselected> Join </TitleUnselected>     
                         <TitleUnselected> Subscribe </TitleUnselected>
                     </TitleContainer>
-                    <div className="mt-3 justify-content-center" style={{borderWidth: 1}}>
+                    <div className="mt-3 justify-content-center mt-5 mb-5" >
                         <Button className="btn-pill btn-shadow " onClick={this.showAdd} style={{backgroundColor:'#3B5998', width: 150}}>
                             <IoLogoFacebook color="white" fontSize="1.5rem" style={{paddingRight: 1}}/>
                             Facebook
@@ -63,7 +63,7 @@ const Widget = styled.div`
     max-width: 464px;
     width: 100%;
     height: 100%;
-    max-height: 400px;
+    max-height: 500px;
     background-color: #FFFFFF 
     border-radius: 5px;  
     display: flex;
