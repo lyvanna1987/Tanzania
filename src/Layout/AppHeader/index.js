@@ -47,6 +47,9 @@ class Header extends React.Component {
                             <Link className="my-1 mx-3 text-body" to="/signUp">
                                 SIGN UP
                             </Link>
+                            <Link className="my-1 mx-3 text-body" to="/signIn">
+                                SIGN IN
+                            </Link>
                             <Link className="my-1 mx-3 text-body" to="/search">
                                 SEAECH
                             </Link>

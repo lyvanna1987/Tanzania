@@ -9,6 +9,7 @@ import {
 const LandingPage = lazy(() => import('../../Pages/LandingPage'))
 const HowItWroks = lazy(() => import('../../Pages/HowItWorks'))
 const SignUp  = lazy(()=>import('../../Pages/Auth/SignUp'))
+const SignIn  = lazy(()=>import('../../Pages/Auth/SignIn'))
 const AppMain = () => {
 
     return (
@@ -30,6 +31,7 @@ const AppMain = () => {
                 <Switch>
                     <Route exact path="/" component={LandingPage}/>
                     <Route path="/signUp" component={SignUp} />
+                    <Route path="/signIn" component={SignIn} />
                     <Route path="/howTo" component={HowItWroks} />
                 </Switch>
             </Suspense>
