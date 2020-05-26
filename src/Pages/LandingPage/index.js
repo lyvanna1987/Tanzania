@@ -28,7 +28,7 @@ class LandingPage extends Component {
     render() {
         return (
             <Fragment>
-                <ImgMainBar>
+                <Banner>
                     <div className="maincontent he-100">
                         <div className="row he-100">
                             <div className="mx-auto my-auto mx-md-5">
@@ -43,7 +43,7 @@ class LandingPage extends Component {
                             </div>
                         </div>
                     </div>
-                </ImgMainBar>
+                </Banner>
                 <HowWorksContainer>
                     <div className="maincontent he-100">
                         <div className="row">
@@ -133,7 +133,7 @@ class LandingPage extends Component {
                         <span style={{color: '#FFB300', fontSize: 20, textAlign: 'center'}}>Click here to start!</span>
                     </div>
                 </Container1>
-                <div className="row">
+                <div className="row m-0">
                     <div className="col-sm-12 col-md-6 col-lg-4" style={{backgroundColor: '#7E7D7D'}} >
                         <ContactContainer className="d-flex flex-column justify-content-center align-items-center">
                             <ContactTitle className="text-success">VISIT</ContactTitle>
@@ -185,14 +185,14 @@ class LandingPage extends Component {
 
 export default LandingPage
 
-const ImgMainBar = styled.div`
+const Banner = styled.div`
     width: 100%;
     height: 600px;
     background: url(${bg});
 `
-const Title = styled.h2`
-    color: #000000;
-    font-weight: 600;
+const Title = styled.h1`
+    color: #1A2647;
+    font-weight: 500;
 `
 const SubTitle = styled.p`
     color: #000000;
@@ -200,11 +200,13 @@ const SubTitle = styled.p`
     font-size: 20px;
 `
 const Subscription1 = styled.p`
-    color: #000000;
-    font-size: 16px;
+    color: #1A2647;
+    font-family: GeorgiaItalic;
+    font-size: 25px;
+    font-style: italic;
 `
 const Subscription2 = styled.p`
-    color: #000000;
+    color: #1A2647;
     width: 300px;
     text-align: center;
     font-size: 16px;

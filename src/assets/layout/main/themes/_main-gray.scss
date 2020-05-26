@@ -4,7 +4,8 @@
 
 $app-container-bg: #ffffff;
 $app-sidebar-bg: #ffffff;
-$app-header-bg: #f8f9fa;
+$app-header-bg: #AAADAF;
+$app-footer-bg: #262626;
 $app-header-logo-bg: rgba(0, 0, 0, .03);
 
 // Content
@@ -24,7 +25,9 @@ $app-header-logo-bg: rgba(0, 0, 0, .03);
     background: rgba(0, 0, 0, .03);
   }
 
-  .app-footer,
+  .app-footer {
+    background: $app-footer-bg;
+  }
   .app-header {
     background: $app-header-bg;
   }
