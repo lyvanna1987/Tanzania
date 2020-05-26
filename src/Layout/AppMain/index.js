@@ -6,7 +6,8 @@ import {
     ToastContainer,
 } from 'react-toastify';
 
-const LandingPage = lazy(() => import('../../Pages/LandingPage'));
+const LandingPage = lazy(() => import('../../Pages/LandingPage'))
+const HowItWroks = lazy(() => import('../../Pages/HowItWorks'))
 const SignUp  = lazy(()=>import('../../Pages/Auth/SignUp'))
 const AppMain = () => {
 
@@ -21,7 +22,7 @@ const AppMain = () => {
                             <Loader type="line-scale-party"/>
                         </div>
                         <h6 className="mt-3">
-                            Please wait while we load Category Page
+                            Loading...
                         </h6>
                     </div>
                 </div>
@@ -29,8 +30,8 @@ const AppMain = () => {
                 <Switch>
                     <Route exact path="/" component={LandingPage}/>
                     <Route path="/signUp" component={SignUp} />
+                    <Route path="/howTo" component={HowItWroks} />
                 </Switch>
-                
             </Suspense>
 
             <Route exact path="/" render={() => (

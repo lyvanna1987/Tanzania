@@ -2,7 +2,7 @@
 
 .fixed-footer {
   .app-footer {
-    position: fixed;
+    // position: fixed;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -19,7 +19,7 @@
   }
 
   .app-main .app-main__outer {
-    padding-bottom: $app-header-height;
+    // padding-bottom: $app-header-height;
   }
 
   &.closed-sidebar {

@@ -165,14 +165,22 @@
 
 @import "layout/responsive/responsive-base";
 
-.appmain, .w100 {
-    width: 100%;
+
+@font-face {
+    font-family: 'Georgia';
+    src: local('Georgia'), url('~assets/fonts/Georgia Regular font.ttf') format('Regular');
+}
+
+@font-face {
+    font-family: 'GeorgiaItalic';
+    src: local('GeorgiaItalic'), url('~assets/fonts/Georgia Bold Italic font.ttf') format('italic');
 }
 
 .maincontent {
     width: 1140px;
     margin: auto;
     padding: 10px;
+    font-family: Georgia;
     @media only screen and (max-width: 1200px) {
         width: 100%;
     }

@@ -6,6 +6,8 @@ import HeaderLogo from '../AppLogo';
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+import logo from './../../assets/utils/images/logo.png'
+
 class Header extends React.Component {
     render() {
         let {
@@ -31,7 +33,9 @@ class Header extends React.Component {
                         {'header-mobile-open': enableMobileMenuSmall},
                     )}>
                         <div className="app-header-left">
-                            <div>logo</div>
+                            <div>
+                                <LogoImage src={logo} />
+                            </div>
                         </div>
                         <div className="app-header-right">
                             <Link className="my-1 mx-3 text-body" to="/">
@@ -76,3 +80,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
+
+const LogoImage = styled.img`
+    width: 84px;
+    height: 84px;
+`
