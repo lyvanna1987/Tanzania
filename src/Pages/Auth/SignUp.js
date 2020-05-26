@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import bg from '../../assets/utils/images/laptop.png'
+import background from '../../assets/utils/images/laptop.png'
 
 class SignUp extends React.Component {
 
     render () {
         return (            
-            <Container>
-                {/* <Widget></Widget> */}
-                
+            <Container>                
+                <Widget>
+                    <Title></Title>
+                </Widget>                
             </Container>           
         )
     }
@@ -16,15 +17,28 @@ class SignUp extends React.Component {
 
 export default SignUp
 
-const Container = styled.div`
-    display: flex;
+const Container = styled.div`    
     width: 100%;
-    height: 100vh;
-    flex-direction: row;
-    background: url(${bg});
+    height: 100vh;    
+    background: url(${background});    
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 `
-const Widget = styled.div`
-    flex: 1;
+const Widget = styled.div`   
+    max-width: 464px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    background-color: #FFFFFF 
+    border-radius: 5px;    
+    algin-items: center;
+    display: flex;
+`
+const Title = styled.div`
+    width: 90%;
+    height: 30px;
+    border-bottom: 1px solid grey;
 `
 
 
